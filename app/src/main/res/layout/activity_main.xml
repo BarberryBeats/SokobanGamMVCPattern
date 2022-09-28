@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        android:textSize="24sp"
+        android:backgroundTint="@color/orange"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:cornerRadius="60sp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/txt_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/round_view"
+            android:padding="8dp"
+            android:text="Level: "
+            app:layout_goneMarginTop="16dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+    <TextView
+        android:id="@+id/txt_canvas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Canvas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_prev_lvl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cornerRadius="32dp"
+            android:text="preview \nlevel"
+            android:backgroundTint="@color/orange"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="0.5"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_next_lvl"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/orange"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="next \nlevel"
+            app:cornerRadius="32dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_restart"
+            android:layout_weight="0.5"
+            android:backgroundTint="@color/orange"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:text="next \nlevel"
+            app:cornerRadius="32dp"/>
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
