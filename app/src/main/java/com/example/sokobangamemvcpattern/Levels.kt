@@ -19,20 +19,22 @@ class Levels(activity: MainActivity) {
 
     private val lvl2: Array<Array<Int>> = arrayOf(
         arrayOf(2, 2, 2, 2, 2, 2, 2, 2),
+        arrayOf(2, 1, 0, 0, 2, 0, 0, 2),
+        arrayOf(2, 0, 0, 3, 0, 0, 0, 2),
+        arrayOf(2, 0, 0, 2, 0, 4, 0, 2),
+        arrayOf(2, 0, 0, 2, 2, 2, 0, 2),
         arrayOf(2, 0, 0, 0, 0, 0, 0, 2),
-        arrayOf(2, 0, 0, 0, 0, 0, 0, 2),
-        arrayOf(2, 0, 0, 0, 1, 0, 0, 2),
-        arrayOf(2, 0, 0, 0, 3, 0, 0, 2),
-        arrayOf(2, 0, 0, 0, 4, 0, 0, 2),
         arrayOf(2, 2, 2, 2, 2, 2, 2, 2)
     )
 
     private val lvl3: Array<Array<Int>> = arrayOf(
-        arrayOf(2, 2, 2, 2, 2),
-        arrayOf(2, 0, 3, 4, 2),
-        arrayOf(2, 1, 3, 4, 2),
-        arrayOf(2, 0, 3, 4, 2),
-        arrayOf(2, 2, 2, 2, 2)
+        arrayOf(2, 2, 2, 2, 2, 2, 2, 2),
+        arrayOf(2, 1, 0, 0, 2, 0, 0, 2),
+        arrayOf(2, 0, 3, 0, 0, 0, 0, 2),
+        arrayOf(2, 0, 0, 2, 0, 4, 0, 2),
+        arrayOf(2, 0, 0, 2, 2, 2, 0, 2),
+        arrayOf(2, 0, 0, 0, 0, 0, 0, 2),
+        arrayOf(2, 2, 2, 2, 2, 2, 2, 2)
     )
 
     fun getLvl(lvl: Int): Array<Array<Int>> {
